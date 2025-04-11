@@ -71,10 +71,7 @@ const Header = () => {
                     <ul className="nav-dropdown-list hidden group-hover:block md:invisible md:absolute md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
-                          <Link
-                            href={child.url}
-                            className="nav-dropdown-link block"
-                          >
+                          <Link href={child.url} className="nav-dropdown-link block" legacyBehavior>
                             {child.name}
                           </Link>
                         </li>
@@ -89,7 +86,7 @@ const Header = () => {
                       className={`nav-link block ${
                         pathname === menu.url ? "nav-link-active" : ""
                       }`}
-                    >
+                      legacyBehavior>
                       {menu.name}
                     </Link>
                   </li>
@@ -102,7 +99,7 @@ const Header = () => {
                   className="btn btn-primary z-0 py-[14px]"
                   href={link}
                   rel=""
-                >
+                  legacyBehavior>
                   {label}
                 </Link>
               </li>
@@ -111,7 +108,11 @@ const Header = () => {
         </div>
         {enable && (
           <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:order-2 md:ml-0 md:flex">
-            <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="">
+            <Link
+              className="btn btn-primary z-0 py-[14px]"
+              href={link}
+              rel=""
+              legacyBehavior>
               {label}
             </Link>
           </div>

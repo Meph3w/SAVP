@@ -24,7 +24,7 @@ function Cta({ cta }) {
                 className="btn btn-primary mt-4"
                 href={cta.button.link}
                 rel={cta.button.rel}
-              >
+                legacyBehavior>
                 {cta.button.label}
               </Link>
             )}

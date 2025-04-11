@@ -21,7 +21,7 @@ const Footer = () => {
                 <ul className="mt-6">
                   {col?.menu.map((item) => (
                     <li className="mb-1" key={item.text}>
-                      <Link href={item.url} rel="">
+                      <Link href={item.url} rel="" legacyBehavior>
                         {item.text}
                       </Link>
                     </li>
@@ -32,7 +32,7 @@ const Footer = () => {
           })}
           {/* social icons */}
           <div className="md-12 sm:col-6 lg:col-3">
-            <Link href="/" aria-label="Bigspring">
+            <Link href="/" aria-label="Bigspring" legacyBehavior>
               <Image
                 src={config.site.logo}
                 width={config.site.logo_width}
