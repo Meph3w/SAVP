@@ -1,7 +1,7 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus.
+  title: Suporte Avançado de Vida em Pediatria
+  content: Agora ao alcance de suas mãos. 100% Grátis e ilimitado.
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
@@ -9,7 +9,7 @@ banner:
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title: O que você vai encontrar aqui
   features:
   - name: "Clean Code"
     icon: "/images/code.svg"
