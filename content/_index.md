@@ -4,7 +4,7 @@ banner:
   content: Agora ao alcance de suas mãos. 100% Grátis e ilimitado.
   image: /images/banner-art.svg
   button:
-    label: "Comece agora!
+    label: Comece agora!
     link: "/blog"
 
 # feature
