@@ -1,7 +1,7 @@
 ---
 banner:
   title: Suporte Avançado de Vida em Pediatria
-  content: Agora ao alcance de suas mãos. 100% Grátis e ilimitado.
+  content: Acesso 100% gratuito e ilimitado. Conteúdo atualizado periodicamente.
   image: /images/banner-art.svg
   button:
     label: Comece agora!
