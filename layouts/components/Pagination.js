@@ -63,32 +63,27 @@ const Pagination = ({ section, currentPage, totalPages }) => {
 
           {/* page index */}
           {pageList.map((pagination, i) => (
-            <React.Fragment key={`page-${i}`}>
-              {pagination === currentPage ? (
-                <span
-                  aria-current="page"
-                  className={`rounded-md bg-primary px-4 py-2 text-white`}
-                >
-                  {pagination}
-                </span>
-              ) : (
-                <Link
-                  href={
-                    i === 0
-                      ? `${section ? "/" + section : "/"}`
-                      : `${section ? "/" + section : ""}/page/${pagination}`
-                  }
-                  passHref
-                >
-                  <a
-                    aria-current="page"
-                    className={`rounded-md  bg-theme-light px-4 py-2 text-dark hover:bg-primary hover:text-white`}
-                  >
-                    {pagination}
-                  </a>
-                </Link>
-              )}
-            </React.Fragment>
+  <React.Fragment key={`page-${i}`}>
+    {pagination === currentPage ? (
+      <span
+        aria-current="page"
+        className={`rounded-md bg-primary px-4 py-2 text-white`}
+      >
+        {pagination}
+      </span>
+    ) : (
+      <Link
+        href={
+          pagination === 1
+            ? `${section ? "/" + section : "/"}`
+            : `${section ? "/" + section : ""}/page/${pagination}`
+        }
+        className="rounded-md bg-theme-light px-4 py-2 text-dark hover:bg-primary hover:text-white"
+      >
+        {pagination}
+      </Link>
+    )}
+  </React.Fragment>
           ))}
 
           {/* next page */}
