@@ -111,8 +111,7 @@ const Header = () => {
             <Link
               className="btn btn-primary z-0 py-[14px]"
               href={link}
-              rel=""
-              legacyBehavior>
+              rel="">
               {label}
             </Link>
           </div>

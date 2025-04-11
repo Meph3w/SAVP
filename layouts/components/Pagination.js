@@ -26,8 +26,7 @@ const Pagination = ({ section, currentPage, totalPages }) => {
                   ? `${section ? "/" + section : "/"}`
                   : `${section ? "/" + section : ""}/page/${currentPage - 1}`
               }
-              className="inline-flex w-[42px] justify-center rounded-md bg-theme-light px-2 py-2 text-dark hover:bg-primary hover:text-white"
-              legacyBehavior>
+              className="inline-flex w-[42px] justify-center rounded-md bg-theme-light px-2 py-2 text-dark hover:bg-primary hover:text-white">
               <span className="sr-only">Previous</span>
               <svg
                 className="mt-1 h-5 w-5"

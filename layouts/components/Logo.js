@@ -14,8 +14,7 @@ const Logo = ({ src }) => {
       style={{
         height: logo_height.replace("px", "") + "px",
         width: logo_width.replace("px", "") + "px",
-      }}
-      legacyBehavior>
+      }}>
       {src || logo ? (
         <Image
           width={logo_width.replace("px", "") * 2}

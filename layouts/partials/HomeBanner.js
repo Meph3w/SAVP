@@ -14,8 +14,7 @@ const HomeBanner = ({ banner }) => {
               <Link
                 className="btn btn-primary mt-4"
                 href={banner.button.link}
-                rel={banner.button.rel}
-                legacyBehavior>
+                rel={banner.button.rel}>
                 {banner.button.label}
               </Link>
             )}
