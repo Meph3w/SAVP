@@ -73,7 +73,6 @@ const Pagination = ({ section, currentPage, totalPages }) => {
                 </span>
               ) : (
                 <Link
-                 ={true}
                   href={
                     i === 0
                       ? `${section ? "/" + section : "/"}`
