@@ -26,7 +26,7 @@ const Posts = ({ posts }) => {
               <Link
                 href={`/${blog_folder}/${posts[0].slug}`}
                 className="block hover:text-primary"
-                legacyBehavior>
+               >
                 {posts[0].frontmatter.title}
               </Link>
             </h2>
@@ -61,7 +61,7 @@ const Posts = ({ posts }) => {
             <Link
               href={`/${blog_folder}/${post.slug}`}
               className="block hover:text-primary"
-              legacyBehavior>
+             >
               {post.frontmatter.title}
             </Link>
           </h2>

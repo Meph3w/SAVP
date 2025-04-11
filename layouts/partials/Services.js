@@ -50,7 +50,7 @@ const Services = ({ services }) => {
                 <Link
                   href={service?.button.link}
                   className="cta-link inline-flex items-center text-primary"
-                  legacyBehavior>
+                 >
                   {service?.button.label}
                   <Image
                     className="ml-1"

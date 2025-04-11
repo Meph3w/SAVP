@@ -40,7 +40,7 @@ function Pricing({ data }) {
                     }`}
                     href={plan.button.link}
                     rel={plan.button.rel}
-                    legacyBehavior>
+                   >
                     {plan.button.label}
                   </Link>
                 </div>
